@@ -1,0 +1,50 @@
+GET http://localhost:3001/api/users
+
+
+###
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username": "hellas",
+    "name": "Arto Hellas",
+    "password": "secretpassword"
+}
+
+###
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username": "mluukkai",
+    "name": "Matti Luukkainen",
+    "password": "anothersecretpassword"
+}
+
+
+###
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username": "Pikachusote"
+}
+
+
+###
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "username": "hellas",
+  "password": "secretpassword"
+}
+
+###
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "username": "mluukkai",
+  "password": "anothersecretpassword"
+}

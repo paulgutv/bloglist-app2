@@ -1,0 +1,32 @@
+GET http://localhost:3001/api/blogs
+
+
+
+###
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Pokemon",
+  "author": "Ash Ketchum",
+  "url": "http://www.pokemon.com",
+  "likes": 8000000
+}
+
+
+###
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2Mzg4NjFkMzlmY2ZiNTZmYjA2ZTE1MmUiLCJpYXQiOjE2Njk5NjQxMDUsImV4cCI6MTY2OTk2NzcwNX0.qxXcaqOZpq3I-EP2Nmy7mmg0HRacH95eBYliBiiC850
+
+{
+  "title": "Adventure Island4",
+  "author": "Nintendo Again One More Time",
+  "url": "http://www.nintendos.com",
+  "likes": 999999
+}
+
+
+###
+DELETE http://localhost:3001/api/blogs/638967427bf28ad55f9bfefc
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2Mzg4NjFkMzlmY2ZiNTZmYjA2ZTE1MmUiLCJpYXQiOjE2Njk5NjU3OTMsImV4cCI6MTY2OTk2OTM5M30.Fa7irey5JKy_1lYtJSEbSBMobPQqP7zedev_HpFhbvw
